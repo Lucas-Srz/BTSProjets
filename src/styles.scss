@@ -1,0 +1,33 @@
+/* CSS GLOBALE AUX SITE */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* - - Fond du site - - */
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #C9C7CC;
+  }
+
+ /* - - Donnée globale pour les boutons du site (Position pas choisi ici) - - */ 
+  .btn {
+    position: absolute; /* => Position */
+    color: #C9C7CC; /* => Couleur du texte */
+    background-color: #303030;
+    font-size: 20px; /* => Taille du texte */
+    border: 2px solid #303030; /* => Bordure du bouton */
+    border-radius: 25px; /* => Bordure des boutons */
+  }
+
+/* => Annimation lorsque du clique */
+  .btn:hover { 
+    color: #303030; /* => Couleur du texte */
+    background-color: #808080; /* => Couleur du fond */
+    border: 2px solid #303030; /* => Bordure du bouton */
+    transition: 0.2s all; /* => Transition des boutons */
+  }

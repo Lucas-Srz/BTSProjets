@@ -1,0 +1,88 @@
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<!-- Lignes de séparations vertical -->
+    <div style="position: absolute; border-left: thick solid #000; height:100%; top: 0%; left: 30%;"></div>
+
+<!-- Bouton Retour -->
+    <!-- <button (click)="feedback()" class="btn btnRetour">Retour</button> -->
+
+
+<div class="postxt">
+    <!-- - - - - - - - - - - PARTIE GAUCHE DE LA PAGE - - - - - - - - - - -->
+
+        <!-- BOX NOM | PRENOM -->
+            <div class="divCompte">
+                <div class="divC">
+                    <p STYLE="padding:0 0 0 20px;">
+                        <strong>Nom : {{ donneeNom }}</strong><br>
+                        <strong>Prénom : {{ donneePrenom }}</strong>
+                    </p>
+                </div>
+            </div>
+
+        <br><br><br><br><br><br>
+        
+        <!-- TEXTE POUR LE CHOIX -->
+            <form>
+                <p STYLE="padding:0 0 0 35px;">
+                    <strong>
+                        <!-- Partie pompe -->
+                            S&#233;lectionner une pompe :
+                                    <select name="pompe" [(ngModel)]="pompe">
+                                        <!-- <option value="0">Toute les pompes</option> -->
+                                        <option value="1">Pompe n&#176;1</option>
+                                        <option value="2">Pompe n&#176;2</option>
+                                        <option value="3">Pompe n&#176;3</option>
+                                        <option value="4">Pompe n&#176;4</option>
+                                        <option value="5">Pompe n&#176;5</option>
+                                        <option value="6">Pompe n&#176;6</option>
+                                    </select>
+                        <br>
+                            
+                        <!-- Partie date -->
+                            S&#233;lectionner une 1er date :
+                                    <input type="date" name="date1" [(ngModel)]="date1">
+                        <br>
+
+                            S&#233;lectionner une 2&#233;me date :
+                                    <input type="date" name="date2" [(ngModel)]="date2">
+                        <br><br><br>
+
+                        <!-- Partie check box -->
+                            S&#233;lectionner le(s) graphique(s) : <br>
+                    </strong>
+                                <label> <input type="checkbox" name="graph1" [(ngModel)]="graph1">  | <abbr title="Compteur pour la temperature">Temperature</abbr>                   </label> <br>
+                                <label> <input type="checkbox" name="graph2" [(ngModel)]="graph2"> | <abbr title="Compteur pour la commande de soufflage">CPT_CMD_SF</abbr>          </label> <br>
+                                <label> <input type="checkbox" name="graph3" [(ngModel)]="graph3"> | <abbr title="Compteur pour la prise de pièces">CPT_PPIECE</abbr>                </label> <br>
+                                <label> <input type="checkbox" name="graph4" [(ngModel)]="graph4"> | <abbr title="Compteur par défaut pour la prise de pièces">CPT_DEF_PPIECE</abbr> </label> <br>
+                                <label> <input type="checkbox" name="graph5" [(ngModel)]="graph5"> | <abbr title="Compteur pour la régulation ASC">CPT_REGUL_ASC</abbr>              </label> <br>
+                                <label> <input type="checkbox" name="graph6" [(ngModel)]="graph6"> | <abbr title="Compteur par défaut de la régulation ASC">CPT_DEF_REGUL</abbr>     </label> <br>
+                                <label> <input type="checkbox" name="graph7" [(ngModel)]="graph7"> | <abbr title="Compteur pour commande de vide interne">CPT_CMD_INT_VD</abbr>      </label> <br>
+                                <label> <input type="checkbox" name="graph8" [(ngModel)]="graph8"> | <abbr title="Compteur pour la commande de vide externe">CPT_CMD_EXT_VD</abbr>   </label> <br>
+                                <label> <input type="checkbox" name="graph9" [(ngModel)]="graph9"> | <abbr title="Compteur par défaut d'alimentation">CPT_DEF_ALIM</abbr>            </label> <br>
+                </p>
+            </form>
+
+                        <!-- Partie bouton -->
+                            <!-- Affiche les graphiques -->
+                                <button (click)="sendGraph()" class="btn btnAff">Afficher les graphiques</button>
+
+                            <!-- Retour à la page d'acceuil -->
+                                <button (click)="deconnexion()" class="btn btnDeconnexion">Déconnexion</button>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+</div>
+
+<!-- - - - - - - - - - - PARTIE DROITE DE LA PAGE - - - - - - - - - - -->
+
+    <!-- IMAGE -->
+        <div *ngIf="showComponent">
+            <!-- <div class="divgraph">
+                <app-graphique1></app-graphique1>
+            </div> -->
+            <app-carrousel></app-carrousel>
+        </div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

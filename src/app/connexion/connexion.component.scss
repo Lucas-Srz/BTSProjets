@@ -1,0 +1,181 @@
+/* CSS UNIQUEMENT POUR "Connexion" */
+
+/* - - DIV Globale - - */
+  // .divGlobale {
+  //   position: absolute;
+  //   border: 5px solid #303030;
+  //   border-radius: 40px 40px 40px 40px;
+  //   background-color: #808080;
+  // }
+
+
+/* - - PARTIE CREE LE COMPTE - - */
+  /* DIV Creation */
+  .divCreation {
+    position: absolute;
+    border: 5px solid #303030;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #808080;
+    top: 38%; /* -> Position hauteur */
+    left: 15%; /* -> Position gauche */
+    right: 60%; /* -> Position droite */
+    height: 50%; /* -> Position largeur */
+  }
+
+/* Pos Nom */
+  .posNomCree {
+    position: relative;
+    top: 15%;
+  }
+
+/* Pos Prenom */
+  .posPrenomCree {
+    position: relative;
+    top: 30%;
+  }
+
+/* Posi MotDePasse */
+  .posMdpCree {
+    position: relative;
+    top: 45%;
+  }
+
+  /* Message */
+  .messageCree {
+    position: absolute;
+    top:105%;
+    // left: 10%;
+    // right: 10%;
+  }
+/* - - - - - - - - - - - - - - - -*/
+
+
+/* - - PARTIE CONNEXION - - */
+/* DIV Connexion */
+  .divConnexion {
+    position: absolute;
+    border: 5px solid #303030;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #808080;
+    top: 38%; /* -> Position hauteur */
+    left: 60%; /* -> Position gauche */
+    right: 15%; /* -> Position droite */
+    height: 50%; /* -> Position largeur */
+  }
+
+/* Pos Nom */
+  .posNomConnexion {
+    position: relative;
+    top: 25%;
+  }
+
+/* Pos Prenom*/
+  .posPrenomConnexion {
+    position: relative;
+    top: 40%;
+  }
+
+/* Message */
+  .messageConnexion {
+    position: absolute;
+    top:85%;
+    left: 29.5%;
+    right: 29.5%;
+  }
+/* - - - - - - - - - - - - -*/
+
+
+/* - - BTN Connexion - - */
+  /* Donne la position des boutons */
+    .btnCreation {
+      padding: 5px; /* -> Taille entre le texte et le bouton */
+      top: 81%; /* -> Position hauteur */
+      left: 30%;
+      right: 30%;
+    }
+
+/* - - BTN Connexion - - */
+  /* Donne la position des boutons */
+    .btnConnexion {
+      padding: 5px; /* -> Taille entre le texte et le bouton */
+      top: 66%; /* -> Position hauteur */
+      left: 35%;
+      right: 35%;
+    }
+
+
+/* 
+  Code pour l'affichage de la box
+  Source : https://morioh.com/p/30df07ab0b9a
+*/
+  // * {
+  //   margin: 0;
+  //   padding: 0;
+  //   outline: none;
+  //   box-sizing: border-box;
+  //   font-family: 'Poppins', sans-serif;
+  // }
+
+  .wrapper .input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    left: 10%; /*Box a 10% du bord*/
+  }
+
+  .wrapper .input-data input {
+    height: 100%;
+    width: 80%; /*Longeur de la barre du bas*/
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    background-color: #808080; /*Fond de la box*/
+  }
+
+  .input-data input:focus ~ label,
+  .input-data input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #C9C7CC; /*Couleur du texte lors du clique*/
+  }
+
+  .wrapper .input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #C9C7CC; /*Couleur du texte*/
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .input-data .underline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 80%; /*Longeur de la barre du bas lors du clique*/
+    background: black; /*Couleur de la barre lors du clique*/
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before {
+    transform: scaleX(1);
+  }
+/* - - - - - - - - - - */
+
+/* Bouton "Deconnexion" */
+  .btnDeconnexion {
+    padding: 5px;
+    top: 2%;
+    left: 90%;
+    //right: 1%;
+  }

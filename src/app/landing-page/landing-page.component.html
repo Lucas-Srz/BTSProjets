@@ -1,0 +1,34 @@
+<!--- BOX CONNEXION --->
+<form>
+  <div class="divAdmin">
+    <!--- BLOCK POUR LE NOM --->
+      <div class="posNomAdmin">
+        <div class="wrapper">
+          <div class="input-data">
+            <input type="text" name="nom" [(ngModel)]="nom" required>
+            <div class="underline"></div>
+            <label>Nom</label>
+          </div>
+        </div>
+      </div>
+
+    <!--- BLOCK POUR LE MDP --->
+      <div class="posMdpAdmin">
+        <div class="wrapper">
+          <div class="input-data">
+            <input [type]="showPassword ? 'text' : 'password'" name="mot_de_passe" [(ngModel)]="mot_de_passe" required>
+            <img src="{{ showPassword ? 'assets/img/eye-slash-solid.png' : 'assets/img/eye-solid.png' }}" width="20" (click)="togglePassword()">
+            <div class="underline"></div>
+            <label>Mot de passe</label>
+          </div>
+        </div>
+      </div>
+
+    <button (click)="sendAdmin()" class="btn btnConnexion">Connexion</button>
+
+    <div [hidden]="!afficherTexteConnexion">
+      <p class="messageAdmin">{{messageAdmin}}</p>
+    </div>
+  </div>
+</form>
+<!--------------------->

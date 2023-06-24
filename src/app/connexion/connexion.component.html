@@ -1,0 +1,81 @@
+<!--- BOX NEW COMPTE --->
+<form>
+    <div class="divCreation">
+      <!--- BLOC POUR LE NOM --->
+        <div class="posNomCree">
+          <div class="wrapper">
+            <div class="input-data">
+              <input type="text" name="nom" [(ngModel)]="nom" required>
+              <div class="underline"></div>
+              <label>Nom</label>
+            </div>
+          </div>
+        </div>
+
+      <!--- BLOC POUR LE PRENOM --->
+        <div class="posPrenomCree">
+          <div class="wrapper">
+            <div class="input-data">
+              <input type="text" name="prenom" [(ngModel)]="prenom" required>
+              <div class="underline"></div>
+              <label>Prénom</label>
+            </div>
+          </div>
+        </div>
+
+      <!--- BLOC POUR LE MDP --->
+        <div class="posMdpCree">
+          <div class="wrapper">
+            <div class="input-data">
+              <input [type]="showPassword ? 'text' : 'password'" name="mot_de_passe" [(ngModel)]="mot_de_passe" required>
+              <img src="{{ showPassword ? 'assets/img/eye-slash-solid.png' : 'assets/img/eye-solid.png' }}" width="20" (click)="togglePassword()">
+              <div class="underline"></div>
+              <label>Mot de passe</label>
+            </div>
+          </div>
+        </div>
+
+      <button (click)="retrieve()" class="btn btnCreation">Crée le compte</button>
+      <div [hidden]="!afficherTexteNew">
+        <p class="messageCree">{{messageCree}}</p>
+      </div>
+    </div>
+  </form>
+<!---------------------->
+
+<!--- BOX CONNEXION --->
+  <form>
+    <div class="divConnexion">
+      <!--- BLOCK POUR LE NOM --->
+        <div class="posNomConnexion">
+          <div class="wrapper">
+            <div class="input-data">
+              <input type="text" name="nom" [(ngModel)]="nom" required>
+              <div class="underline"></div>
+              <label>Nom</label>
+            </div>
+          </div>
+        </div>
+
+      <!--- BLOCK POUR LE MDP --->
+        <div class="posPrenomConnexion">
+          <div class="wrapper">
+            <div class="input-data">
+              <input [type]="showPassword ? 'text' : 'password'" name="mot_de_passe" [(ngModel)]="mot_de_passe" required>
+              <img src="{{ showPassword ? 'assets/img/eye-slash-solid.png' : 'assets/img/eye-solid.png' }}" width="20" (click)="togglePassword()">
+              <div class="underline"></div>
+              <label>Mot de passe</label>
+            </div>
+          </div>
+        </div>
+
+      <button (click)="send()" class="btn btnConnexion">Connexion</button>
+      <div [hidden]="!afficherTexteConnexion">
+        <p class="messageConnexion">{{messageConnexion}}</p>
+      </div>
+    </div>
+  </form>
+<!--------------------->
+
+<!-- Retour à la page d'acceuil -->
+  <button (click)="logout()" class="btn btnDeconnexion">Déconnexion</button>

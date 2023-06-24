@@ -1,0 +1,162 @@
+<!-- Source du carrousel : https://codepen.io/ancaspatariu/pen/WpQYOP -->
+
+<div>
+    <div class="carousel">
+        <ul class="slides">
+            <!-- - - - - - GRAPHIQUE 1 (Temperature) - - - - - -->
+                <input type="radio" name="radio-buttons" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide-image">
+                        <app-graphique1></app-graphique1>
+                    </div>
+                    <!-- Affiche les < > de chaque coter du graphiques -->
+                    <div class="carousel-controls">
+                        <label for="img-9" class="prev-slide"> <!-- Graphique Avent -->
+                            <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-2" class="next-slide"> <!-- Graphique Apres -->
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 2 (CPT_CMD_SF) - - - - - -->
+                <input type="radio" name="radio-buttons" id="img-2"/>
+                <li class="slide-container">
+                    <div class="slide-image">
+                        <app-graphique2></app-graphique2>
+                    </div>
+                    <div class="carousel-controls">
+                        <label for="img-1" class="prev-slide">
+                            <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-3" class="next-slide">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 3 (CPT_PPIECE) - - - - - -->
+                <input type="radio" name="radio-buttons" id="img-3"/>
+                <li class="slide-container">
+                    <div class="slide-image">
+                        <app-graphique3></app-graphique3>
+                    </div>
+                    <div class="carousel-controls">
+                        <label for="img-2" class="prev-slide">
+                            <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-4" class="next-slide">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 4 (CPT_DEF_PPIECE) - - - - - -->
+            <input type="radio" name="radio-buttons" id="img-4"/>
+            <li class="slide-container">
+                <div class="slide-image">
+                    <app-graphique4></app-graphique4>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-5" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 5 (CPT_REGUL_ASC) - - - - - -->
+            <input type="radio" name="radio-buttons" id="img-5"/>
+            <li class="slide-container">
+                <div class="slide-image">
+                    <app-graphique5></app-graphique5>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-4" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-6" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 6 (CPT_DEF_REGUL) - - - - - -->
+            <input type="radio" name="radio-buttons" id="img-6" />
+            <li class="slide-container">
+                <div class="slide-image">
+                    <app-graphique6></app-graphique6>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-5" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-7" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 7 (CPT_CMD_INT_VD) - - - - - -->
+            <input type="radio" name="radio-buttons" id="img-7" />
+            <li class="slide-container">
+                <div class="slide-image">
+                    <app-graphique7></app-graphique7>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-6" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-8" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 8 (CPT_CMD_EXT_VD) - - - - - -->
+            <input type="radio" name="radio-buttons" id="img-8" />
+            <li class="slide-container">
+                <div class="slide-image">
+                    <app-graphique8></app-graphique8>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-7" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-9" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <!-- - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - GRAPHIQUE 9 (CPT_DEF_ALIM) - - - - - -->
+            <input type="radio" name="radio-buttons" id="img-9" />
+            <li class="slide-container">
+                <div class="slide-image">
+                    <app-graphique9></app-graphique9>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-8" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <!-- - - - - - - - - - - - - - - -->
+        </ul>
+    </div>
+</div>
+

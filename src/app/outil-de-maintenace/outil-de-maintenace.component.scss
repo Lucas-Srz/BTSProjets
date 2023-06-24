@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Div pour la box du compte*/
+    .divCompte {
+        border: 5px solid #303030;
+        border-radius: 40px 40px 40px 40px;
+        background-color: #808080;
+        position: absolute;
+        top: 5%; /* -> Position hauteur */
+        left: 5%; /* -> Position gauche */
+        right: 30%; /* -> Position droite */
+        height: 13%; /* -> Position largeur */
+    }
+
+/* Div centrer le texte de la box*/
+    .divC {
+        position: relative;
+        top: 15%;
+    }
+
+
+/* - - - - - TEST - - - - - */
+    /* Bouton "Afficher les graphiques" */
+        .btnAff {
+            padding: 5px;
+            top: 110%;
+            left: 23%;
+        }
+
+    /* Bouton "Deconnexion" */
+        .btnDeconnexion {
+            padding: 5px;
+            top: 7%;
+            left: 99%;
+        }
+ 
+    /* Bouton "Afficher les graphiques" */
+        .btnPlusInfo {
+            padding: 5px;
+            top: 130%;
+            left: 40%;
+        }
+
+/* - - - - - TEST - - - - - */
+    .postxt {
+        position: absolute;
+    }
+
+    .divgraph {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+    }
