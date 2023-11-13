@@ -35,7 +35,7 @@ L'application web devra :
 
 ## Réalisation
 
-L'application web finale est à découvrir : : [PROJETBTS]()
+L'application web finale est à découvrir : [PROJETBTS]()
 
 ## Information
 
