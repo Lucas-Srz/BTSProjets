@@ -1,27 +1,42 @@
-# ProjetPompe
+# ProjetBTS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Lors de mon BTS, j'ai réalisé un projet final consistant en la création d'un site Angular, conforme à un cahier des charges spécifique.
 
-## Development server
+## Présentation générale
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+COVAL, entreprise française pour la manipulation par le vide, produit et commercialise des composants et systèmes de vide pour des applications industrielles, où la manipulation par le vide est déterminante pour l'efficacité et la productivité.
+Parmi ses produits, se trouve la pompe à vide connectée LEMCOM. Cette pompe, associée à une ventouse, va permettre de venir saisir tous types d'objets.
 
-## Code scaffolding
+## Expression du besoin
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+La problématique par M.XXX est la possibilité d'avoir :
+- Un stockage des différentes valeurs retournées par les pompes
+- Un outil de maintenance préventive afin de limiter le nombre de pannes ainsi que le gaspillage d'air comprimé
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Les points clé à mettre en œuvre :
+- Centraliser et stocker les données de la pompe
+- Visualiser en temps réel sur des graphiques les grandeurs mesurées sur la pompe
 
-## Running unit tests
+## Cahier d'echarge
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+L'application web devra :
+- Fournir une page d'accueil
+- Communiquer avec la base de données afin de récupérer les données stockées
+- Proposer à l'opérateur un outil simple de récupération des données stockées dans la base (Possibilité de récupérer des données sur une plage horaire ou de journées)
+- Proposer à l'opérateur un outil d'analyse des données contenues dans la base (Affichage graphique des grandeurs stockées dans la base de données)
 
-## Running end-to-end tests
+## Technologies utilisées
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Angular : La réalisation du site a été faite en Angular, cela a été un défi puisque je ne connaissais pas ce langage.
+- PHP / MySQL : Une partie base de données a dû être réalisée pour la récupération de compte ou de données de la pompe
+- Highcharts : Bibliothèque permettant l'affichage des graphiques de données
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Réalisation
+
+L'application web finale est à découvrir : : [PROJETBTS]()
+
+## Information
+
+La réalisation de ce projet n'a pas été réalisée avec l'entreprise COVAL, il s'agit d'un projet type de fin d'année. Je ne suis jamais rentré en contact avec l'entreprise.
