@@ -40,7 +40,7 @@ app.use(bodyParser.json());
     
     if(login === "" || prenom === "" || motDePasse === ""){
       console.log("Impossible de créer un compte avec aucun nom, prenom, mdp !");
-      res.status(201).json({ auth: false }); // renvoyer un code de statut 409 conflict
+      res.status(201).json({ auth: false }); // Renvoyer un code de statut 409 conflict
     }else{
       // Vérifier si le compte existe déjà
       connection.query('SELECT * FROM table_login WHERE nom = ?', [login], (error, results, fields) => {

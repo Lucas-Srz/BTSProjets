@@ -87,6 +87,6 @@ export class OutilDeMaintenaceComponent{
     deconnexion() {
       console.log('btn "Deconnexion" !');
       this.authService.logout();
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl('/connexion');
     }
 }
