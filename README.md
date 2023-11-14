@@ -32,11 +32,6 @@ L'application web devra :
 - PHP / MySQL : Une partie base de données a dû être réalisée pour la récupération de compte ou de données de la pompe
 - Highcharts : Bibliothèque permettant l'affichage des graphiques de données
 
-
-## Réalisation
-
-L'application web finale est à découvrir : [PROJETBTS]()
-
 ## Information
 
 La réalisation de ce projet n'a pas été réalisée avec l'entreprise COVAL, il s'agit d'un projet type de fin d'année. Je ne suis jamais rentré en contact avec l'entreprise.
