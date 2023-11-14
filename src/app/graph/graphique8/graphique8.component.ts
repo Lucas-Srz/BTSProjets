@@ -11,7 +11,7 @@ import { DataGraph08 } from '../../models/dataGraph08.model';
 })
 export class Graphique8Component implements OnInit {
   dataGr08: DataGraph08[] = [];
-  //Crée un tableau de DataGraph08 pour avoir le même format response => DataGraph08
+  //Créer un tableau de DataGraph08 pour avoir le même format réponse => DataGraph08
   lineChart!: Chart;
   donDates: string[] = [];
   donExtVd: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique8Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr08 = this.authService.getdonG8();
-    //console.log('Reponce dataGr08 : ' + this.dataGr08); // Donne une réponce en [object Object]
-    //console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr08)); // Affiche réellement les données
+    //console.log('Réponse dataGr08 : ' + this.dataGr08); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr08)); // Affiche réellement les données
   }
 
   public options: any = {

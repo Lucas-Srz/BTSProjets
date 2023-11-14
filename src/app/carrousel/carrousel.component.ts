@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class CarrouselComponent {
 
-  carrData: any; // déclarer une variable pour stocker les données du carrousel
+  carrData: any; //Déclarer une variable pour stocker les données du carrousel
 
   constructor(private http: HttpClient, private router: Router) {}
 }

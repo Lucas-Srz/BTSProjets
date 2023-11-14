@@ -11,7 +11,7 @@ import { DataGraph03 } from '../../models/dataGraph03.model';
 })
 export class Graphique3Component implements OnInit {
   dataGr03: DataGraph03[] = [];
-  //Crée un tableau de DataGraph03 pour avoir le même format response => DataGraph03
+  //Créer un tableau de DataGraph03 pour avoir le même format réponse => DataGraph03
   lineChart!: Chart;
   donDates: string[] = [];
   donPpiece: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique3Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr03 = this.authService.getdonG3();
-    //console.log('Reponce dataGr03 : ' + this.dataGr03); // Donne une réponce en [object Object]
-    //console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr03)); // Affiche réellement les données
+    //console.log('Réponse dataGr03 : ' + this.dataGr03); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr03)); // Affiche réellement les données
   }
 
   public options: any = {

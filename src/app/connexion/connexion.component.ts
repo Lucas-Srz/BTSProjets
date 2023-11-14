@@ -26,7 +26,7 @@ export class ConnexionComponent {
       this.showPassword = !this.showPassword;
     }
 
-  // Crée un compte
+  // Créer un compte
     retrieve() {
       console.log('Bouton "Crée un compte" appuyer !');
     

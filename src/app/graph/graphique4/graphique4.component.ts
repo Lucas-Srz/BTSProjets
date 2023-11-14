@@ -11,7 +11,7 @@ import { DataGraph04 } from '../../models/dataGraph04.model';
 })
 export class Graphique4Component implements OnInit {
   dataGr04: DataGraph04[] = [];
-  //Crée un tableau de DataGraph04 pour avoir le même format response => DataGraph04
+  //Créer un tableau de DataGraph04 pour avoir le même format réponse => DataGraph04
   lineChart!: Chart;
   donDates: string[] = [];
   donDefPpiece: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique4Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr04 = this.authService.getdonG4();
-    //console.log('Reponce dataGr04 : ' + this.dataGr04); // Donne une réponce en [object Object]
-    //console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr04)); // Affiche réellement les données
+    //console.log('Réponse dataGr04 : ' + this.dataGr04); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr04)); // Affiche réellement les données
   }
 
   public options: any = {

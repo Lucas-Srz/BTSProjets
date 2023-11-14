@@ -11,7 +11,7 @@ import { DataGraph06 } from '../../models/dataGraph06.model';
 })
 export class Graphique6Component implements OnInit {
   dataGr06: DataGraph06[] = [];
-  //Crée un tableau de DataGraph06 pour avoir le même format response => DataGraph06
+  //Créer un tableau de DataGraph06 pour avoir le même format réponse => DataGraph06
   lineChart!: Chart;
   donDates: string[] = [];
   donDefRegul: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique6Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr06 = this.authService.getdonG6();
-    //console.log('Reponce dataGr06 : ' + this.dataGr06); // Donne une réponce en [object Object]
-    //console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr06)); // Affiche réellement les données
+    //console.log('Réponse dataGr06 : ' + this.dataGr06); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr06)); // Affiche réellement les données
   }
 
   public options: any = {

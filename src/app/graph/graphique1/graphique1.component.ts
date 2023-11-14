@@ -11,7 +11,7 @@ import { DataGraph01 } from '../../models/dataGraph01.model';
 })
 export class Graphique1Component implements OnInit {
   dataGr01: DataGraph01[] = [];
-  //Crée un tableau de DataGraph01 pour avoir le même format response => DataGraph01
+  //Créer un tableau de DataGraph01 pour avoir le même format réponse => DataGraph01
   lineChart!: Chart;
   donDates: string[] = [];
   donTemp: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique1Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr01 = this.authService.getdonG1();
-    //console.log('Reponce dataGr01 : ' + this.dataGr01); // Donne une réponce en [object Object]
-    //console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr01)); // Affiche réellement les données
+    //console.log('Réponse dataGr01 : ' + this.dataGr01); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr01)); // Affiche réellement les données
   }
 
   public options: any = {

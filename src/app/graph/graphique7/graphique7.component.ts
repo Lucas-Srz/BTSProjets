@@ -11,7 +11,7 @@ import { DataGraph07 } from '../../models/dataGraph07.model';
 })
 export class Graphique7Component implements OnInit {
   dataGr07: DataGraph07[] = [];
-  //Crée un tableau de DataGraph07 pour avoir le même format response => DataGraph07
+  //Créer un tableau de DataGraph07 pour avoir le même format réponse => DataGraph07
   lineChart!: Chart;
   donDates: string[] = [];
   donIntVd: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique7Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr07 = this.authService.getdonG7();
-    //console.log('Reponce dataGr07 : ' + this.dataGr07); // Donne une réponce en [object Object]
-    //console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr07)); // Affiche réellement les données
+    //console.log('Réponse dataGr07 : ' + this.dataGr07); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr07)); // Affiche réellement les données
   }
 
   public options: any = {

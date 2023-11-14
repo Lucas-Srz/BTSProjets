@@ -11,7 +11,7 @@ import { DataGraph09 } from '../../models/dataGraph09.model';
 })
 export class Graphique9Component implements OnInit {
   dataGr09: DataGraph09[] = [];
-  //Crée un tableau de DataGraph09 pour avoir le même format response => DataGraph09
+  //Créer un tableau de DataGraph09 pour avoir le même format réponse => DataGraph09
   lineChart!: Chart;
   donDates: string[] = [];
   donDefAlim: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique9Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr09 = this.authService.getdonG9();
-    //console.log('Reponce dataGr09 : ' + this.dataGr09); // Donne une réponce en [object Object]
-    //console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr09)); // Affiche réellement les données
+    //console.log('Réponse dataGr09 : ' + this.dataGr09); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr09)); // Affiche réellement les données
   }
 
   public options: any = {

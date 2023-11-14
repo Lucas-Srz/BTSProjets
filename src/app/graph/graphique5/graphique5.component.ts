@@ -11,7 +11,7 @@ import { DataGraph05 } from '../../models/dataGraph05.model';
 })
 export class Graphique5Component implements OnInit {
   dataGr05: DataGraph05[] = [];
-  //Crée un tableau de DataGraph05 pour avoir le même format response => DataGraph05
+  //Créer un tableau de DataGraph05 pour avoir le même format réponse => DataGraph05
   lineChart!: Chart;
   donDates: string[] = [];
   donRegulAsc: number[] = [];
@@ -20,8 +20,8 @@ export class Graphique5Component implements OnInit {
   
   constructor(private authService: AuthService) {
     this.dataGr05 = this.authService.getdonG5();
-    //console.log('Reponce dataGr05 : ' + this.dataGr05); // Donne une réponce en [object Object]
-    console.log('Reponce avec JSON : ' + JSON.stringify(this.dataGr05)); // Affiche réellement les données
+    //console.log('Réponse dataGr05 : ' + this.dataGr05); // Donne une réponse en [object Object]
+    //console.log('Réponse avec JSON : ' + JSON.stringify(this.dataGr05)); // Affiche réellement les données
   }
 
   public options: any = {
