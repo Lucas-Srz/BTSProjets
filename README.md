@@ -1,4 +1,4 @@
-# ProjetBTS
+# Projet : BTS Projet final
 
 Lors de mon BTS, j'ai réalisé un projet final consistant en la création d'un site Angular, conforme à un cahier des charges spécifique.
 
